@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="QhkztM" name="libTest" projectType="guiapp" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1">
+  <MAINGROUP id="i0nQA0" name="libTest">
+    <GROUP id="{96E34119-1584-ABCD-38A8-EB31EC6868CA}" name="Source">
+      <GROUP id="{CD55A4DD-D465-F844-E645-0787D0F90A09}" name="MaxMilian">
+        <GROUP id="{2AAADC04-B450-6010-23BA-B2FBC0F7A3E0}" name="libs">
+          <GROUP id="{F33D69F8-D533-A11C-DD1F-8A1B60464C13}" name="PolyBLEP">
+            <FILE id="wCRpcp" name="PolyBLEP.cpp" compile="1" resource="0" file="../MaxMilian/libs/PolyBLEP/PolyBLEP.cpp"/>
+            <FILE id="nAz5nu" name="PolyBLEP.h" compile="0" resource="0" file="../MaxMilian/libs/PolyBLEP/PolyBLEP.h"/>
+            <FILE id="s8qGWk" name="README.md" compile="0" resource="1" file="../MaxMilian/libs/PolyBLEP/README.md"/>
+          </GROUP>
+          <FILE id="HVWB3o" name="fft.cpp" compile="1" resource="0" file="../MaxMilian/libs/fft.cpp"/>
+          <FILE id="thDVsC" name="fft.h" compile="0" resource="0" file="../MaxMilian/libs/fft.h"/>
+          <FILE id="zPlohV" name="maxiAtoms.cpp" compile="1" resource="0" file="../MaxMilian/libs/maxiAtoms.cpp"/>
+          <FILE id="OCIFQM" name="maxiAtoms.h" compile="0" resource="0" file="../MaxMilian/libs/maxiAtoms.h"/>
+          <FILE id="h9ltQ9" name="maxiBark.cpp" compile="1" resource="0" file="../MaxMilian/libs/maxiBark.cpp"/>
+          <FILE id="mOX3LP" name="maxiBark.h" compile="0" resource="0" file="../MaxMilian/libs/maxiBark.h"/>
+          <FILE id="MLliDj" name="maxiClock.cpp" compile="1" resource="0" file="../MaxMilian/libs/maxiClock.cpp"/>
+          <FILE id="xfIlq3" name="maxiClock.h" compile="0" resource="0" file="../MaxMilian/libs/maxiClock.h"/>
+          <FILE id="gjXY5n" name="maxiConvolve.cpp" compile="1" resource="0"
+                file="../MaxMilian/libs/maxiConvolve.cpp"/>
+          <FILE id="ptbeUn" name="maxiConvolve.h" compile="0" resource="0" file="../MaxMilian/libs/maxiConvolve.h"/>
+          <FILE id="eL68Of" name="maxiFFT.cpp" compile="1" resource="0" file="../MaxMilian/libs/maxiFFT.cpp"/>
+          <FILE id="hOCdY6" name="maxiFFT.h" compile="0" resource="0" file="../MaxMilian/libs/maxiFFT.h"/>
+          <FILE id="HmYNuM" name="maxiGrains.cpp" compile="1" resource="0" file="../MaxMilian/libs/maxiGrains.cpp"/>
+          <FILE id="ZKREBL" name="maxiGrains.h" compile="0" resource="0" file="../MaxMilian/libs/maxiGrains.h"/>
+          <FILE id="Z8nOIJ" name="maxim.h" compile="0" resource="0" file="../MaxMilian/libs/maxim.h"/>
+          <FILE id="nnzSsO" name="maxiMFCC.cpp" compile="1" resource="0" file="../MaxMilian/libs/maxiMFCC.cpp"/>
+          <FILE id="c9Kzap" name="maxiMFCC.h" compile="0" resource="0" file="../MaxMilian/libs/maxiMFCC.h"/>
+          <FILE id="AaxMD4" name="maxiPolyBLEP.h" compile="0" resource="0" file="../MaxMilian/libs/maxiPolyBLEP.h"/>
+          <FILE id="bDmZER" name="maxiReverb.cpp" compile="1" resource="0" file="../MaxMilian/libs/maxiReverb.cpp"/>
+          <FILE id="FpRik2" name="maxiReverb.h" compile="0" resource="0" file="../MaxMilian/libs/maxiReverb.h"/>
+          <FILE id="zE47yN" name="sineTable.h" compile="0" resource="0" file="../MaxMilian/libs/sineTable.h"/>
+          <FILE id="EmbFpj" name="stb_vorbis.c" compile="1" resource="0" file="../MaxMilian/libs/stb_vorbis.c"/>
+          <FILE id="U3IjQ5" name="stb_vorbis.h" compile="0" resource="0" file="../MaxMilian/libs/stb_vorbis.h"/>
+        </GROUP>
+        <FILE id="qQcD4T" name="main.cpp" compile="1" resource="0" file="../MaxMilian/main.cpp"/>
+        <FILE id="ry9W7G" name="maximilian.cpp" compile="1" resource="0" file="../MaxMilian/maximilian.cpp"/>
+        <FILE id="qa7m49" name="maximilian.h" compile="0" resource="0" file="../MaxMilian/maximilian.h"/>
+        <FILE id="qQKdes" name="stb_vorbis.c" compile="1" resource="0" file="../MaxMilian/stb_vorbis.c"/>
+        <FILE id="nK95S4" name="stb_vorbis.h" compile="0" resource="0" file="../MaxMilian/stb_vorbis.h"/>
+      </GROUP>
+      <FILE id="srDyST" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+      <FILE id="G7892i" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
+      <FILE id="XUoQvt" name="MainComponent.cpp" compile="1" resource="0"
+            file="Source/MainComponent.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1"/>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="libTest" headerPath="/Users/sankarshrajeev/Desktop/Repo/MaxMilian"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="libTest"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../../Downloads/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../Downloads/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../Downloads/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../Downloads/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../Downloads/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../../Downloads/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../Downloads/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../Downloads/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../Downloads/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../Downloads/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../Downloads/JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+</JUCERPROJECT>
