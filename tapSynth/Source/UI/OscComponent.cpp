@@ -38,8 +38,8 @@ void OscComponent::paint (juce::Graphics& g)
        drawing code..
     */
 
-    g.fillAll (getLookAndFeel().findColour (juce::ResizableWindow::backgroundColourId));   // clear the background
-
+    //g.fillAll (getLookAndFeel().findColour (juce::ResizableWindow::backgroundColourId));   // clear the background
+    g.fillAll (juce::Colours::darkblue);
     g.setColour (juce::Colours::grey);
    // g.drawRect (getLocalBounds(), 1);   // draw an outline around the component
 

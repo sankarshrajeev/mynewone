@@ -172,9 +172,6 @@ void TapSynthAudioProcessor::processBlock (juce::AudioBuffer<float>& buffer, juc
             
             voice->update(attack.load(), decay.load(), sustain.load(), release.load());
             
-            //meter
-            rmsLevelLeft =juce::Decibels::gainToDecibels(buffer.getRMSLevel(0,0,buffer.getNumSamples()));
-            rmsLevelRight =juce::Decibels::gainToDecibels(buffer.getRMSLevel(1,0,buffer.getNumSamples()));
             
         }
     }
@@ -184,6 +181,10 @@ void TapSynthAudioProcessor::processBlock (juce::AudioBuffer<float>& buffer, juc
         juce::Logger::writeToLog("TimeStamp: "+ juce::String (metadata.getMessage().getTimeStamp()));
 */
     synth.renderNextBlock(buffer, midiMessages, 0, buffer.getNumSamples());
+    
+    rmsLevelLeft =juce::Decibels::gainToDecibels(buffer.getRMSLevel(0,0,buffer.getNumSamples()));
+    rmsLevelRight =juce::Decibels::gainToDecibels(buffer.getRMSLevel(1,0,buffer.getNumSamples()));
+    
     
     auto& filterType =  *apvts.getRawParameterValue("FILTERTYPE");
     auto& cutoff = *apvts.getRawParameterValue("FILTERFREQ");

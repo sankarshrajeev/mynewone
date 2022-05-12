@@ -46,9 +46,12 @@ void TapSynthAudioProcessorEditor::timerCallback()
 void TapSynthAudioProcessorEditor::paint (juce::Graphics& g)
 {
     // (Our component is opaque, so we must completely fill the background with a solid colour)
-    g.fillAll (getLookAndFeel().findColour (juce::ResizableWindow::backgroundColourId));
+    
+    //getLookAndFeel()
+    
+   // g.fillAll (getLookAndFeel().findColour (juce::ResizableWindow::backgroundColourId));
 
-    //g.setColour (juce::Colours::white);
+    g.fillAll (juce::Colours::darkblue);
     //g.setFont (15.0f);
     //g.drawFittedText ("Hello World!", getLocalBounds(), juce::Justification::centred, 1);
 }
@@ -68,7 +71,7 @@ void TapSynthAudioProcessorEditor::resized()
     
     //meter
     
-    horizontalMeterL.setBounds(100,100,200,15);
-    horizontalMeterR.setBounds(100,120,200,15);
+    horizontalMeterL.setBounds(100,50,200,15);
+    horizontalMeterR.setBounds(100,70,200,15);
 }
 

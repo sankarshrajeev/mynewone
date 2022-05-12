@@ -33,7 +33,8 @@ void FilterComponent::paint (juce::Graphics& g)
 {
     auto bounds = getLocalBounds().reduced(5);
     auto labelSpace =bounds.removeFromTop(25.0f);
-    g.fillAll (getLookAndFeel().findColour (juce::ResizableWindow::backgroundColourId));   // clear the background
+    //g.fillAll (getLookAndFeel().findColour (juce::ResizableWindow::backgroundColourId));   // clear the background
+    g.fillAll (juce::Colours::darkblue);
 
     g.setColour (juce::Colours::grey);
    // g.drawRect (getLocalBounds(), 1);   // draw an outline around the component
