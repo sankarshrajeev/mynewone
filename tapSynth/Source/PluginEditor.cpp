@@ -71,7 +71,7 @@ void TapSynthAudioProcessorEditor::resized()
     
     //meter
     
-    horizontalMeterL.setBounds(100,50,200,15);
-    horizontalMeterR.setBounds(100,70,200,15);
+    horizontalMeterL.setBounds(200,50,200,15);
+    horizontalMeterR.setBounds(200,70,200,15);
 }
 
